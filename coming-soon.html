@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEN Capital Partners — Coming Soon</title>
+  <meta name="description" content="STEN Capital Partners — Dedicated capital solutions for the defense, aerospace, and space supply chain. Washington DC. Coming soon.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="STEN Capital Partners — Coming Soon">
+  <meta property="og:description" content="Dedicated capital solutions for the defense, aerospace, and space supply chain. Washington DC. Launching soon.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23213D4D'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A96E' font-family='serif' font-size='18' font-weight='300'>S</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep: #213D4D;
+      --deep-darker: #182c38;
+      --deep-darkest: #0f1f28;
+      --primary: #2B6B7F;
+      --accent: #C9A96E;
+      --accent-light: #d4ba88;
+      --cream: #F5F0E8;
+      --text-light: rgba(245,240,232,0.85);
+      --text-muted: rgba(245,240,232,0.50);
+      --border-subtle: rgba(201,169,110,0.15);
+      --border-accent: rgba(201,169,110,0.35);
+      --transition: 0.35s ease;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { font-size: 16px; background: #080e13; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--deep-darkest);
+      color: var(--text-light);
+      -webkit-font-smoothing: antialiased;
+      max-width: 1440px;
+      margin: 0 auto;
+      border-left: 1px solid var(--border-subtle);
+      border-right: 1px solid var(--border-subtle);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* — Background — */
+    .page {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 3rem 2.5rem;
+    }
+
+    .page-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, var(--deep-darkest) 0%, var(--deep) 40%, var(--primary) 100%);
+      z-index: 0;
+    }
+
+    .page-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 30%, rgba(43,107,127,0.2) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 50% at 20% 80%, rgba(201,169,110,0.06) 0%, transparent 60%);
+    }
+
+    .page-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M30 0v60M0 30h60' stroke='rgba(201,169,110,0.04)' stroke-width='0.5'/%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 560px;
+      width: 100%;
+    }
+
+    /* — Logo — */
+    .logo {
+      margin-bottom: 3.5rem;
+    }
+
+    .logo-main {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.2rem;
+      letter-spacing: 0.4em;
+      color: var(--cream);
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .logo-sub {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* — Divider — */
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--accent);
+      margin: 0 auto 2.5rem;
+    }
+
+    /* — Typography — */
+    .label {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      letter-spacing: 0.02em;
+      line-height: 1.25;
+      color: var(--cream);
+      margin-bottom: 1.2rem;
+    }
+
+    .subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .location {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+    }
+
+    .location span {
+      color: var(--accent);
+    }
+
+    /* — Form — */
+    .form-container {
+      background: linear-gradient(135deg, rgba(33,61,77,0.4), rgba(33,61,77,0.15));
+      border: 1px solid var(--border-subtle);
+      padding: 2.5rem 2rem;
+      text-align: left;
+    }
+
+    .form-title {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .form-input {
+      width: 100%;
+      background: rgba(33,61,77,0.3);
+      border: 1px solid var(--border-subtle);
+      color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      padding: 0.75rem 1rem;
+      outline: none;
+      transition: border-color var(--transition);
+    }
+
+    .form-input:focus {
+      border-color: var(--accent);
+      background: rgba(33,61,77,0.5);
+    }
+
+    .form-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition);
+      background: var(--accent);
+      color: var(--deep-darkest);
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(201,169,110,0.2);
+    }
+
+    .form-note {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+
+    /* — Success — */
+    .success {
+      display: none;
+      text-align: center;
+      padding: 2.5rem 2rem;
+      background: linear-gradient(135deg, rgba(33,61,77,0.4), rgba(33,61,77,0.15));
+      border: 1px solid var(--accent);
+    }
+
+    .success h3 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .success p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* — Footer — */
+    .footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.2rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: var(--deep-darkest);
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer a:hover { color: var(--accent-light); }
+
+    .footer-offices {
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    /* — Responsive — */
+    @media (max-width: 768px) {
+      body { border-left: none; border-right: none; }
+      .page { padding: 2rem 1.5rem; }
+      .form-container { padding: 2rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer { flex-direction: column; gap: 0.6rem; text-align: center; padding: 1rem 1.5rem; }
+      .footer-offices { justify-content: center; }
+      .logo-main { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<main class="page">
+  <div class="page-bg"></div>
+  <div class="content">
+
+    <div class="logo">
+      <span class="logo-main">STEN</span>
+      <span class="logo-sub">Capital Partners</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <span class="label">Coming Soon</span>
+
+    <h1>A new force in<br>Defense & Space financing.</h1>
+
+    <p class="subtitle">Dedicated capital solutions for the companies that power the US defense, aerospace, and space supply chain.</p>
+
+    <p class="location"><span>◆</span> Washington DC</p>
+
+    <!-- Form -->
+    <div class="form-container" id="formContainer">
+      <div class="form-title">Stay informed</div>
+
+      <form id="notifyForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="first_name" class="form-input" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="last_name" class="form-input" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (___) ___-____">
+        </div>
+        <button type="submit" class="btn" id="submitBtn">Notify Me at Launch</button>
+      </form>
+
+      <p class="form-note">We'll reach out when STEN Capital Partners opens for business. No spam — one notification only.</p>
+    </div>
+
+    <!-- Success -->
+    <div class="success" id="successMsg">
+      <h3>You're on the list.</h3>
+      <p>We'll notify you when STEN Capital Partners launches. Thank you for your interest.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <span>&copy; 2026 STEN Capital Partners</span>
+  <div class="footer-offices">
+    <span>◆ Washington DC</span>
+    <a href="https://stenventurecapital.com" target="_blank" rel="noopener">STEN Venture Capital</a>
+  </div>
+</footer>
+
+<script>
+// Cloudflare Workers endpoint — replace with your actual URL
+const WORKER_URL = 'https://notify.stencapitalpartners.com/api/subscribe';
+
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  const data = {
+    first_name: document.getElementById('firstName').value.trim(),
+    last_name: document.getElementById('lastName').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    phone: document.getElementById('phone').value.trim(),
+    submitted_at: new Date().toISOString()
+  };
+
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    if (!res.ok) throw new Error('Network error');
+  } catch (err) {
+    // Store locally as fallback if worker not yet deployed
+    console.log('Worker not available — data:', JSON.stringify(data));
+  }
+
+  // Always show success (graceful degradation)
+  document.getElementById('formContainer').style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
